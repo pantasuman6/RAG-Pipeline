@@ -1,0 +1,19 @@
+RAG stands for Retrieval-Augmented Generation which primary goal is to provide context based and latest information. It is a method that improves how AI systems answer questions by first retrieving relevant information from external sources and then using that information to generate a response. This makes answers more accurate, more grounded, and better suited for tasks that require domain-specific knowledge.
+
+A vector database stores embeddings. Instead of storing text only as plain words, it stores the numerical representations of that text so similar meanings can be found quickly. This allows the system to search for relevant passages even when the exact wording does not match the user’s query.
+
+Embeddings convert text into numbers. They capture the meaning and context of words, sentences, or documents in a mathematical format that machines can process. Text with similar meanings usually has embeddings that are close together in vector space.
+
+LangChain helps connect LLM applications. It provides tools for building workflows that combine language models with documents, databases, APIs, memory, and retrieval systems. Developers use it to make LLM-based applications easier to organize, extend, and automate.
+
+Ollama allows running local LLMs. It makes it possible to download and use large language models on your own computer without relying entirely on cloud services. This is useful for privacy, offline use, testing, and building AI applications that stay under your control.
+
+Together, these technologies form the foundation of many modern AI applications. RAG brings in outside knowledge, embeddings represent text in a machine-readable way, vector databases make retrieval fast, LangChain helps coordinate the workflow, and Ollama enables local model execution.
+
+You can also add this longer version to make the text file more complete:
+
+In a typical RAG pipeline, a document or collection of documents is first split into smaller chunks. Each chunk is converted into an embedding and stored in a vector database. When a user asks a question, the system converts the query into an embedding too, searches for the most similar chunks, and passes those chunks to the LLM as context. The model then generates a response based on both the user’s question and the retrieved information.
+
+This approach is especially helpful when the model needs to answer using private data, updated information, or specialized knowledge. It reduces hallucinations and improves relevance because the model is not relying only on what it learned during training. Instead, it is supported by real data retrieved at the time of the question.
+
+For example, a company can use RAG to build a chatbot that answers questions about internal policy documents, product manuals, or support guides. A student can use it to search lecture notes or research papers. A developer can combine LangChain and Ollama to create a fully local assistant that searches documents and generates answers without sending data to an external server.
